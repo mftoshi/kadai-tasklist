@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   delete 'logout', to: 'sessions#destroy'
 
   get 'sigup', to: 'users#new' 
-  resources :tasks
   resources :users, only: [:index, :show, :new, :create]
+  
+  resources :tasks
 end

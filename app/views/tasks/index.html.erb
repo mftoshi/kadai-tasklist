@@ -6,7 +6,7 @@
     <li><%= link_to task.id, task %> : <%= task.status %> &gt; <%= task.content %></li>
   <% end %>
 </ul>
-<%= link_to '新規タスクの投稿', new_task_path %> 
+<%= link_to 'タスクの投稿', new_task_path %>
 <% else %>
   <div class="center jumbotron">
     <div class="text-center">
@@ -16,5 +16,3 @@
   </div>
 <% end %>
 <%= link_to 'Logout', logout_path, method: :delete %>
-
-
