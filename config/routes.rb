@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   post 'login', to: 'sessions#create'
   delete 'logout', to: 'sessions#destroy'
 
-  get 'sigup', to: 'users#new' 
+  get 'signup', to: 'users#new'
   resources :users, only: [:index, :show, :new, :create]
   
   resources :tasks

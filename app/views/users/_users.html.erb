@@ -1,7 +1,9 @@
 <% if users.any? %>
     <% users.each do |user| %>
-      <%= user.name %>
-      <%= link_to 'View profile', user_path(user) %>
+    <ul>
+      <li><%= user.name %></li>
+      <li><%= link_to 'View profile', user_path(user) %></li>
+    </ul>
     <% end %>
   <%= paginate users %>
 <% end %>
